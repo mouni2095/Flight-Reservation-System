@@ -18,8 +18,7 @@ public class firstSearch {
 		  
 		  
 		  firstSearch transfershow = new firstSearch();
-		  Set<Integer> transans = transfershow.search(exm.size(),exm,3);
-		  for(int every: transans )
+		 
 	        {             
 	            System.out.println(every);            
 	        } 
@@ -39,9 +38,7 @@ public class firstSearch {
 		  while(!queue.isEmpty()){
 			  int node = queue.poll();
 			  for(Integer neighbor: graph.get(node)){
-				  if(hash.contains(neighbor)){
-					  continue;
-				  }
+				 
 				  hash.add(neighbor);
 				  queue.offer(neighbor);
 			  }
@@ -62,8 +59,7 @@ public class firstSearch {
 	        for (int i = 0; i < simplelist.size(); i++) {
 	            int u = simplelist.get(i).get(0);
 	            int v = simplelist.get(i).get(1);
-	            graph.get(v).add(u);
-	            graph.get(u).add(v);
+	           
 	        }
 	        
 	        return graph;
